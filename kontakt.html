@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+	<meta charset="UTF-8">
+	<title>Kontakt | Riis Rejser </title>
+</head>
+<body>
+	<div class="container-fluid p-0">
+		<div class="container">
+			<nav class="navbar navbar-toggleable-md navbar-light">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Friis Rejser </a>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="nav navbar-nav ml-auto navbar-right">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Aktuelle tilbud <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="destinationer.html">Destinitioner</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Kontakt</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		<header class="jumbotron rounded-0 pd-0">
+			<div class="container">
+				<h1>Bjarne Riis rejser</h1>
+				<p>At rejse er at leve</p>
+			</div>
+			
+		</header>
+
+		<main>
+			<div class="container">
+				<form>
+					<div class="form-group mt-5 mb-2 ml-4">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Indsæt email her">
+					</div>
+					<div class="form-group mb-2 ml-4">
+						<label for="exampleTextarea">Skriv til os</label>
+						<textarea class="form-control" id="exampleTextarea" placeholder="Skriv her" rows="3"></textarea>
+					</div>
+				</fieldset>
+				<button type="submit" class="btn btn-primary mb-5 ml-4">Submit</button>
+			</form>
+
+			<div class="row">
+				<section class="col-4">
+					<div class="marker text-center">
+						<i class="fa fa-map-marker mapMarker mt-5 mb-5 text-center " aria-hidden="true"></i>
+						<p>Ryesgade 58</p>
+						<p>9000 Aalborg</p>
+						<p>CVR-nr.: 37129712</p>
+					</div>
+				</section>
+				<section class="col-4 marker text-center">
+					<i class="fa fa-phone mapMarker mt-5 mb-5 " aria-hidden="true"></i>
+					<p>Tlf.: 7216 2726</p>
+
+				</section>
+				<section class="col-4 marker text-center">
+					<i class="fa fa-envelope mapMarker mt-5 mb-5 " aria-hidden="true"></i>
+					<p>Mail: lith(at)aspit.dk</p>
+				</section>
+			</div>
+			
+			<div class="container-fluid maps">
+				<div class="" id="googleMap"></div>
+
+					<script>
+						function myMap() {
+							var mapProp= {
+								center:new google.maps.LatLng(51.508742,-0.120850),
+								zoom:5,
+							};
+							var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+						}
+					</script>
+
+					<script src="https://maps.googleapis.com/maps/api/js?AIzaSyDywPYU4oVvwEs2hBHzxvme0M4x1-PEnw0&callback=myMap"></script>
+
+				</div>
+			
+		</main>
+
+		<footer>
+			<p class="text-center mt-4 mb-5 mt-2">Copyright 2016 Klement Johansen</p>
+		</footer>
+	</body>
+	</html>
