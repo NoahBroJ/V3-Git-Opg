@@ -1,5 +1,21 @@
+.navbar-brand {
+    font-size: 1rem;
+    color: rgba(0,0,0,.5);
+}
+
 header {
 	background-image: url("img/jumbotronbackground.jpg");
 	background-repeat: no-repeat;
-	background-size: stretch;
+	background-size: 100%;
+    background-position: 0 -150px;
+}
+
+header h1 {
+    color: white;
+    font-size: 3em
+}
+
+header p {
+    color: white;
+    font-size: 1.2em;
 }
