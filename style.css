@@ -6,13 +6,13 @@
 header {
 	background-image: url("img/jumbotronbackground.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
-    background-position: 0 -150px;
+	background-size: cover;
+    background-position: 0 25%;
 }
 
 header h1 {
     color: white;
-    font-size: 3em
+    font-size: 3em;
 }
 
 header p {
